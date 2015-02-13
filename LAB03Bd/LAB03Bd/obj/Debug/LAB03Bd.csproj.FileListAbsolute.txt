@@ -18,3 +18,12 @@ C:\Users\201037629\Desktop\LAB03Bd\LAB03Bd\obj\Debug\LAB03Bd.csprojResolveAssemb
 C:\Users\201037629\Desktop\LAB03Bd\LAB03Bd\obj\Debug\LAB03Bd.Form1.resources
 C:\Users\201037629\Desktop\LAB03Bd\LAB03Bd\obj\Debug\LAB03Bd.Properties.Resources.resources
 C:\Users\201037629\Desktop\LAB03Bd\LAB03Bd\obj\Debug\LAB03Bd.csproj.GenerateResource.Cache
+C:\Users\Razma\Desktop\lab03bd\LAB03Bd\LAB03Bd\bin\Debug\LAB03Bd.exe.config
+C:\Users\Razma\Desktop\lab03bd\LAB03Bd\LAB03Bd\obj\Debug\LAB03Bd.exe
+C:\Users\Razma\Desktop\lab03bd\LAB03Bd\LAB03Bd\obj\Debug\LAB03Bd.pdb
+C:\Users\Razma\Desktop\lab03bd\LAB03Bd\LAB03Bd\bin\Debug\LAB03Bd.exe
+C:\Users\Razma\Desktop\lab03bd\LAB03Bd\LAB03Bd\bin\Debug\LAB03Bd.pdb
+C:\Users\Razma\Desktop\lab03bd\LAB03Bd\LAB03Bd\obj\Debug\LAB03Bd.csprojResolveAssemblyReference.cache
+C:\Users\Razma\Desktop\lab03bd\LAB03Bd\LAB03Bd\obj\Debug\LAB03Bd.Form1.resources
+C:\Users\Razma\Desktop\lab03bd\LAB03Bd\LAB03Bd\obj\Debug\LAB03Bd.Properties.Resources.resources
+C:\Users\Razma\Desktop\lab03bd\LAB03Bd\LAB03Bd\obj\Debug\LAB03Bd.csproj.GenerateResource.Cache
