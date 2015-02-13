@@ -163,6 +163,7 @@ namespace LAB03Bd
 
       private void Btn_recherche_Click(object sender, EventArgs e)
       {
+         clearBinding();
           OracleCommand ObjSelct = new OracleCommand("Employes", oraconn);
           ObjSelct.CommandType = CommandType.StoredProcedure;
           ObjSelct.CommandText = " GESTIONEMPLOYES.RECHERCHER";
@@ -171,11 +172,62 @@ namespace LAB03Bd
           OracleParameter codedep = new OracleParameter("code", OracleDbType.Varchar2, 30);
           codedep.Direction = ParameterDirection.Input;
           codedep.Value = Tb__Recherche.Text;
-          ObjSelct.Parameters.Add( Result);
+          
           ObjSelct.Parameters.Add(codedep);
+           ObjSelct.Parameters.Add( Result);
+          OracleDataAdapter Info = new OracleDataAdapter(ObjSelct);
+          Info.Fill(data, "Recherche");
 
-          ObjSelct.ExecuteNonQuery();
-          MessageBox.Show(Result.ToString());
+          FilledRbox();
+          
+      }
+      private void FilledRbox()
+      {
+         Tb_RName.DataBindings.Add("TEXT", data, "Recherche.nomemp");
+         Tb_rPrenom.DataBindings.Add("TEXT", data, "Recherche.prenomemp");
+         Tb_rSalaire.DataBindings.Add("TEXT", data, "Recherche.salaireemp");
+         Tb_Code.DataBindings.Add("TEXT", data, "Recherche.codedep");
+      }
+      private void clearBinding()
+      {
+         data.Clear();
+         Tb_RName.DataBindings.Clear();
+         Tb_rPrenom.DataBindings.Clear();
+         Tb_rSalaire.DataBindings.Clear();
+         Tb_Code.DataBindings.Clear();
+      }
+
+      private void Btn_Ajouter_Click(object sender, EventArgs e)
+      {
+
+         OracleCommand ObjSelct = new OracleCommand("Employes", oraconn);
+         ObjSelct.CommandType = CommandType.StoredProcedure;
+         ObjSelct.CommandText = " GESTIONEMPLOYES.INSERTION";
+
+         OracleParameter name = new OracleParameter("name", OracleDbType.Varchar2, 30);
+         name.Direction = ParameterDirection.Input;
+         name.Value = Tb_Iname.Text;       
+         ObjSelct.Parameters.Add(name);
+
+         OracleParameter prenom = new OracleParameter("prenom", OracleDbType.Varchar2, 30);
+         prenom.Direction = ParameterDirection.Input;
+         prenom.Value = Tb_Iprenom.Text;
+         ObjSelct.Parameters.Add(prenom);
+
+         OracleParameter salaire = new OracleParameter("salaire", OracleDbType.Int32);
+         salaire.Direction = ParameterDirection.Input;
+         salaire.Value = Tb_ISalaire.Text;
+         ObjSelct.Parameters.Add(salaire);
+
+         OracleParameter code = new OracleParameter("codedep", OracleDbType.Char, 3);
+         code.Direction = ParameterDirection.Input;
+         code.Value = Tb_ICodeDep.Text;
+         ObjSelct.Parameters.Add(code);
+
+         int i =ObjSelct.ExecuteNonQuery();
+
+         MessageBox.Show(i.ToString());
+
       }
     }
    }

@@ -27,3 +27,13 @@ C:\Users\Razma\Desktop\lab03bd\LAB03Bd\LAB03Bd\obj\Debug\LAB03Bd.csprojResolveAs
 C:\Users\Razma\Desktop\lab03bd\LAB03Bd\LAB03Bd\obj\Debug\LAB03Bd.Form1.resources
 C:\Users\Razma\Desktop\lab03bd\LAB03Bd\LAB03Bd\obj\Debug\LAB03Bd.Properties.Resources.resources
 C:\Users\Razma\Desktop\lab03bd\LAB03Bd\LAB03Bd\obj\Debug\LAB03Bd.csproj.GenerateResource.Cache
+C:\Users\201037629\Desktop\GitHub\lab03bd\LAB03Bd\LAB03Bd\bin\Debug\LAB03Bd.exe.config
+C:\Users\201037629\Desktop\GitHub\lab03bd\LAB03Bd\LAB03Bd\obj\Debug\LAB03Bd.exe
+C:\Users\201037629\Desktop\GitHub\lab03bd\LAB03Bd\LAB03Bd\obj\Debug\LAB03Bd.pdb
+C:\Users\201037629\Desktop\GitHub\lab03bd\LAB03Bd\LAB03Bd\bin\Debug\LAB03Bd.exe
+C:\Users\201037629\Desktop\GitHub\lab03bd\LAB03Bd\LAB03Bd\bin\Debug\LAB03Bd.pdb
+C:\Users\201037629\Desktop\GitHub\lab03bd\LAB03Bd\LAB03Bd\bin\Debug\Oracle.DataAccess.dll
+C:\Users\201037629\Desktop\GitHub\lab03bd\LAB03Bd\LAB03Bd\obj\Debug\LAB03Bd.csprojResolveAssemblyReference.cache
+C:\Users\201037629\Desktop\GitHub\lab03bd\LAB03Bd\LAB03Bd\obj\Debug\LAB03Bd.Form1.resources
+C:\Users\201037629\Desktop\GitHub\lab03bd\LAB03Bd\LAB03Bd\obj\Debug\LAB03Bd.Properties.Resources.resources
+C:\Users\201037629\Desktop\GitHub\lab03bd\LAB03Bd\LAB03Bd\obj\Debug\LAB03Bd.csproj.GenerateResource.Cache
