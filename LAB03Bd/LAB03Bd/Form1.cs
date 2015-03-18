@@ -21,9 +21,7 @@ namespace LAB03Bd
    
       }
        public void Connection()
-        {
-           
-            
+        {                      
             string Dsource = "(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)" +
               "(HOST=205.237.244.251)(PORT=1521)))" + "(CONNECT_DATA=(SERVICE_NAME=ORCL.clg.qc.ca)))";
             string chainedeconnexion = "DATA SOURCE =" + Dsource + ";USER ID =  PAQUETTE;PASSWORD = ORACLE1";
@@ -158,17 +156,17 @@ namespace LAB03Bd
         
            ObjSelct.ExecuteNonQuery();
 
-          MessageBox.Show("il y a "+codeemp.Value.ToString() + " employes");
+          MessageBox.Show("il y a " + codeemp.Value.ToString() + " employes");
        }
 
       private void Btn_recherche_Click(object sender, EventArgs e)
       {
-         clearBinding();
+          clearBinding();
           OracleCommand ObjSelct = new OracleCommand("Employes", oraconn);
           ObjSelct.CommandType = CommandType.StoredProcedure;
           ObjSelct.CommandText = " GESTIONEMPLOYES.RECHERCHER";
           OracleParameter Result = new OracleParameter("liste", OracleDbType.RefCursor);
-         Result.Direction = ParameterDirection.Output;
+          Result.Direction = ParameterDirection.Output;
           OracleParameter codedep = new OracleParameter("code", OracleDbType.Varchar2, 30);
           codedep.Direction = ParameterDirection.Input;
           codedep.Value = Tb__Recherche.Text;
@@ -223,6 +221,7 @@ namespace LAB03Bd
          code.Direction = ParameterDirection.Input;
          code.Value = Tb_ICodeDep.Text;
          ObjSelct.Parameters.Add(code);
+
 
          int i =ObjSelct.ExecuteNonQuery();
 
